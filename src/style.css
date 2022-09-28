@@ -1,0 +1,92 @@
+header{
+    background-color: lightcoral;
+    display:  flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+header button{
+    color: white;
+    font-style: bold;
+    font-size: 1.5rem;
+    /*background-color: transparent;*/
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+    color: lightcoral;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+.task{
+    background-color: lightsalmon;
+    margin: 0.5rem 0.1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    position: relative;
+}
+.task h3,p{
+    margin:0;
+}
+.cross{
+    color: 'red';
+    cursor: 'pointer';
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+}
+.reminder{
+    border-left-color: rgb(173, 255, 80);
+    border-left-width: 50px;
+    border-left-style: solid;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.add-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.25rem;
+}
+.form-control label{
+    font-size: 2rem;
+}
+.form-control input[type=text], input[type=text]:focus, input[type=text]{
+    color: black;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+}
+.form-control-check{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn{
+    padding: 0.5rem;
+    width: 20vw;
+}
+
